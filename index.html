@@ -26,23 +26,27 @@
         <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
+                    <form class="card-body">
                         <fieldset class="fieldset">
-                            <label class="label">Phone Number</label>
-                            <input type="number" class="input" placeholder="Type Your Phone Number" />
+                            <label  class="label">Phone Number</label>
+                            <input value="01779737212" id="phone-number" type="number" class="input" placeholder="Type Your Phone Number" required />
                             <label class="label">Password</label>
-                            <input type="number" class="input" placeholder="Type Your Password" />
+                            <input value="1234" id="pin" type="number" class="input" placeholder="Type Your Password" required />
                             <div><a class="link link-hover">Forgot password?</a></div>
-                            <button class="btn btn-neutral mt-4">Login</button>
+                            <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
                         </fieldset>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <script>
+       
+    </script>
 
+    <script src="js/login.js"></script>
 </body>
 
 </html>
