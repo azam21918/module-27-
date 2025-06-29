@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <!-- daisi ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>hello vai </h1>
-    
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-around">
+                <img src="assets/Group.png" alt="">
+                <div>
+                    <h2 class="font-bold text-2xl">$4500</h2>
+                    <p class="border rounded-lg p-1">Available Balance</p>
+                </div>
+                <a href="index.html"><button class="btn mt-4">Log Out</button></a>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <h1 class="text-xl font-bold">🔥 Welcome to Payooo!</h1>
+            <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </section>
+        <section>
+            <div class=" cards grid grid-cols-3 gap-2 p-2">
+                <div class="border cursor-pointer rounded-lg hover:bg-green-300 ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Add Money</p>
+                </div>
+                <div class="border cursor-pointer rounded-lg  hover:bg-green-100  ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Cash Out</p>
+                </div>
+                <div class="border cursor-pointer rounded-lg  hover:bg-green-100 ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Pay Bill</p>
+                </div>
+                <div class="border cursor-pointer rounded-lg  hover:bg-green-100 ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Bonus</p>
+                </div>
+                <div class="border cursor-pointer rounded-lg  hover:bg-green-100 ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Transition Amounts</p>
+                </div>
+                <div class="border cursor-pointer rounded-lg  hover:bg-green-100 ">
+                    <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
+                    <p class="text-center">Jakat</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="text-center font-bold text-xl">Add Money</h1>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <fieldset class="fieldset">
+                                <legend>Select A bank</legend>
+                                <select class="select">
+                                    <option disabled selected>Pick A Bank</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="Bikash">Bikash</option>
+                                    <option value="DBBL">DBBL</option>
+                                </select>
+                                <label class="label">Phone Number</label>
+                                <input value="01779737212" id="phone-number" type="number" class="input"
+                                    placeholder="Type Your Phone Number" required />
+                                <label class="label">Password</label>
+                                <input value="1234" id="pin" type="number" class="input"
+                                    placeholder="Type Your Password" required />
+                                <label class="label">Add Amount</label>
+                                <input value="" id="" type="number" class="input"
+                                    placeholder="Type Your Amount" required />
+                                <button id="btn-add-money" class="btn btn-neutral mt-4 bg-blue-500">Add Money</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
 </body>
+
 </html>
