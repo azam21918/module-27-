@@ -16,7 +16,7 @@
             <nav class="flex justify-around">
                 <img src="assets/Group.png" alt="">
                 <div>
-                    <h2 class="font-bold text-2xl">$4500</h2>
+                    <h2 class="font-bold text-2xl">$ <span id="main-balance">4500</span></h2>
                     <p class="border rounded-lg p-1">Available Balance</p>
                 </div>
                 <a href="index.html"><button class="btn mt-4">Log Out</button></a>
@@ -29,11 +29,11 @@
         </section>
         <section>
             <div class=" cards grid grid-cols-3 gap-2 p-2">
-                <div class="border cursor-pointer rounded-lg hover:bg-green-300 ">
+                <div id="add-money-box" class="border cursor-pointer rounded-lg hover:bg-green-300 ">
                     <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
                     <p class="text-center">Add Money</p>
                 </div>
-                <div class="border cursor-pointer rounded-lg  hover:bg-green-100  ">
+                <div id="cash-out-box" class="border cursor-pointer rounded-lg  hover:bg-green-100  ">
                     <img class="mx-auto w-12 p-1" src="assets/wallet1.png" alt="">
                     <p class="text-center">Cash Out</p>
                 </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="add-money">
             <h1 class="text-center font-bold text-xl">Add Money</h1>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -71,14 +71,37 @@
                                 </select>
                                 <label class="label">Phone Number</label>
                                 <input value="01779737212" id="phone-number" type="number" class="input"
-                                    placeholder="Type Your Phone Number" required />
+                                    placeholder="Type Your Phone Number" />
                                 <label class="label">Password</label>
                                 <input value="1234" id="pin" type="number" class="input"
-                                    placeholder="Type Your Password" required />
+                                    placeholder="Type Your Password" />
                                 <label class="label">Add Amount</label>
-                                <input value="" id="" type="number" class="input"
-                                    placeholder="Type Your Amount" required />
+                                <input value="" id="add-amount" type="number" class="input"
+                                    placeholder="Type Your Amount" />
                                 <button id="btn-add-money" class="btn btn-neutral mt-4 bg-blue-500">Add Money</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section id="cash-out">
+            <h1 class="text-center font-bold text-xl">Cash out</h1>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label">Phone Number</label>
+                                <input value="01779737212" id="phone-number" type="number" class="input"
+                                    placeholder="Type Your Phone Number" />
+                                <label class="label">Password</label>
+                                <input value="1234" id="pin" type="number" class="input"
+                                    placeholder="Type Your Password" />
+                                <label class="label">Cash Out</label>
+                                <input value="" id="cash-out-amount" type="number" class="input"
+                                    placeholder="Type Your Amount" />
+                                <button id="btn-cash-out" class="btn btn-neutral mt-4 bg-blue-500">Cash Out</button>
                             </fieldset>
                         </form>
                     </div>
@@ -87,7 +110,12 @@
         </section>
     </section>
 
-
+    <script src="js/main.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/cashout.js"></script>
+    <script>
+      
+    </script>
 </body>
 
 </html>
